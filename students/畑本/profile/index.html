@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>畑本珠貴</title>
+    </head>
+    <body background="lightblue">
+        <div>
+            <center>
+                <h1>畑本珠貴の自己紹介ホームページ</h1>
+            </center>
+            <button class="circle_btn_1" type="button" onclick="location.href='pro.html'">Profile1</button>
+            <button class="circle_btn_2" type="button" >2</button>
+            <button class="circle_btn_3" type="button">3</button>
+            <button class="circle_btn_4" type="button">4</button>
+            <button class="circle_btn_5" type="button">5</button>
+        </div>
+    </body>
+
+    <style>
+        button{
+            display: inline-block; 
+            /*
+                display: ブロック要素やインライン要素などの種類を指定できるプロパティ
+                ブロック要素: 見出し、段落、表など <div>,<form>,<h1>,<pre>,<p>,<table>,<ul>
+                インライン要素: ブロック要素の内容 <a>,<img>,<label>,<span>,<textarea>
+            */
+            text-decoration: none;   /* text-decoration: テキストの装飾（下線,上線など）none:初期値（装飾を行わない）*/            
+            color:#FFF;    /* 文字色指定 */
+            width: 200px;    /* 幅 */
+            height: 200px;   /* 高さ */
+            line-height: 200px;    /* 行の高さ指定  幅,高さと同じ値にすることでちょうど真ん中に*/
+            border-radius: 50%;     /* ４つの角をまとめて指定 */
+            text-align: center;     /* 文字や画像を左右,中央に寄せることができる */
+            overflow: hidden;   /* ボックスからはみ出した文字をどうするか hidden: 非表示 */
+            border: dashed 1px #FFF; /* 破線 -- 1px: 線の太さ */
+            transition: .4s;   /* 色が変わるときの遅延？ */
+            margin: 10px auto;
+        }
+        button:hover{
+            background: #668ad8;   /* カーソルを持って行ったときに変わる色 */
+            box-shadow: 0px 0px 0px 5px #668ad8;
+        }
+        .circle_btn_1{
+            background: #87be;  /* 背景 💛 飛んだページの背景と同じにしたい */
+            box-shadow: 0px 0px 0px 5px #87be; 
+            /* ボックスに影をつける 
+            (水平方向の距離 垂直方向の距離 ぼかし距離 広がり距離 影の色) */
+            position: relative;   /* 丸の位置 💛 */
+            top: 10px;
+            left: 20%;
+        }
+        .circle_btn_2{
+            background: #94d;
+            box-shadow: 0px 0px 0px 5px #94d;
+            position: relative;
+            top: 10px;
+            left: 35%;
+        }
+        .circle_btn_3{
+            background: aqua;
+            box-shadow: 0px 0px 0px 5px aqua;
+            position: relative;
+            top: 10px;
+            left: 50%;
+        }
+        .circle_btn_4{
+            background: rgb(105, 127, 223);
+            box-shadow: 0px 0px 0px 5px rgb(105, 127, 223);
+            position: relative;
+            top: 350px;
+            left: 0.2%;
+        }
+        .circle_btn_5{
+            background: rgb(226, 107, 236);
+            box-shadow: 0px 0px 0px 5px rgb(226, 107, 236);
+            position: relative;
+            top: 350px;
+            left: 19%;
+        }
+    </style>
+</html>
