@@ -1,0 +1,294 @@
+
+header{
+    width:100%;
+}
+
+footer{
+    clear:both;
+    font-size:26px;
+}
+
+
+
+.profileimg{
+    float: left;
+}
+
+.profilealt dd{
+    width:1200px;
+    height: 50px;
+    padding-top:25px;
+    font-size:26px;
+    margin-top:10px;
+    margin-bottom:50px;
+}
+
+.profhtimg{
+    width:600px;
+    height: 300px;
+    cursor: pointer;
+    background-image: url(images/329586_s.jpg);
+    float:left;
+    color:white;
+    font-size:100px;
+    text-align: center;
+    filter:saturate(60%);
+}
+
+.profhtimg img{
+    position: absolute;
+    left:10px;
+    top:10px;
+    width:600px;
+    transition: all 0.5s;
+}
+
+.profhtimg:hover img{
+    left:0px; /* 10px→0px とし、幅も600から630とする  実際の動作を確認して指定すると良い */
+    top:0px;
+    width:630px;
+}
+
+
+.profhbimg{
+    width:600px;
+    height: 300px;
+    cursor: pointer;
+    background-image: url(images/4425617_s.jpg);
+    float:left;
+    color:white;
+    font-size:100px;
+    text-align: center;
+    filter:saturate(60%);
+}
+
+/*趣味↓*/
+
+.gmbtn{
+    width:400px;
+    height: 225px;
+    cursor:pointer;
+    float:left;
+    position: relative;
+}
+.gmbtn img{
+    position: absolute;
+    left:10px;
+    top:10px;
+    width:400px;
+    transition: all 0.5s;
+}
+.gmbtn:hover img{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.drbtn{
+    width:400px;
+    height: 225px;
+    cursor:pointer;
+    clear:both;
+    float:left;
+    position: relative;
+}
+
+.drbtn img{
+    position: absolute;
+    left:10px;
+    top:10px;
+    width:400px;
+    transition: all 0.5s;
+    overflow:hidden;
+}
+.drbtn:hover img{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.kobtn{
+    width:400px;
+    height: 225px;
+    cursor:pointer;
+    float:left;
+    position: relative;
+    margin-top:0px;
+    margin-left:20px;
+}
+.kobtn img{
+    position: absolute;
+    left:10px;
+    top:10px;
+    width:400px;
+    transition: all 0.5s;
+}
+.kobtn:hover img{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+/*テンプレ*/
+/*header*/
+
+.tpheader {
+	width:			1200px;
+	height:			675px;
+	overflow:		hidden;
+	position:		relative;	/* 相対位置指定 */
+}
+.tpheader .caption {
+	font-size:      500%;
+    font-family: 'Courier New';
+	text-align: 	center;
+	padding-top:	80px;
+	color:			#fff;
+}
+.tpheader .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.tpheader:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+.tpheader:hover img{
+    transform: scale(1.05);
+	transition:		all 0.5s ease;
+}
+/*tptitle*/
+.tptitle {
+    position: relative;
+    padding: 1rem .5rem;
+    font-size:40px;
+}
+
+.tptitle:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1200px;
+    height: 5px;
+    content: '';
+    background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+    background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+/*tp imgs*/
+.tpimgs{
+    margin:10px 0px 0px 0px;
+}
+.tpleft{
+    float:left;
+}
+.tptop .tpleft{
+    overflow:hidden;
+    width:600px;
+    height:325px;
+}
+.tptop .tpleft:hover img{
+    transform: scale(1.05);
+	transition:		all 0.5s ease;
+    cursor:pointer;
+}
+
+.tptop .tpright{
+    overflow:hidden;
+    width:600px;
+    height:325px;
+}
+.tptop .tpright:hover img{
+    transform: scale(1.05);
+	transition:		all 0.5s ease;
+    cursor:pointer;
+}
+.tpbottom .tpleft{
+    overflow:hidden;
+    width:600px;
+    height:325px;
+}
+.tpbottom .tpleft:hover img{
+    transform: scale(1.05);
+	transition:		all 0.5s ease;
+    cursor:pointer;
+}
+
+.tpbottom .tpright{
+    overflow:hidden;
+    width:600px;
+    height:325px;
+}
+.tpbottom .tpright:hover img{
+    transform: scale(1.05);
+	transition:		all 0.5s ease;
+    cursor:pointer;
+}
+/*tplinks*/
+.tplinks .tpleft{
+    overflow:hidden;
+    width:600px;
+    height:325px;
+    margin-top:10px;
+}
+.tplinks .tpleft:hover img{
+    transform: scale(1.05);
+	transition:		all 0.5s ease;
+    cursor:pointer;
+}
+
+.tplinks .tpright{
+    overflow:hidden;
+    width:600px;
+    height:325px;
+    margin-top:10px;
+}
+.tplinks .tpright:hover img{
+    transform: scale(1.05);
+	transition:		all 0.5s ease;
+    cursor:pointer;
+}
+
+.tptopdr .tpleft{
+    overflow:hidden;
+    width:600px;
+    height:600px;
+}
+.tptopdr .tpright{
+    overflow:hidden;
+    width:600px;
+    height:600px;
+}
+/*tmcolors*/
+.tmcolors{
+    margin-top:10px;
+    font-size:25px;
+}
+
+.tmcolors label[for="red"]{
+    color:red;
+}
+.tmcolors label[for="orange"]{
+    color:orange;
+}
+.tmcolors label[for="blue"]{
+    color:blue;
+}
+
+.tmcolors label[for="green"]{
+    color:green;
+}
+.tmcolors label[for="pink"]{
+    color:pink;
+}
+.tmcolors label[for="black"]{
+    color:black;
+}
+.tmcolors button{
+    width:115px;
+    font-size:30px;
+}
+/*NewFrom*/
