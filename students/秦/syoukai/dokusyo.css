@@ -1,0 +1,36 @@
+body{
+    background-color: azure;
+    background-image: radial-gradient(rgb(196, 248, 248)10%,transparent 10%),radial-gradient(rgb(196, 248, 248)10%,transparent 10%);
+    background-size: 20px 20px;
+    background-position:0 0,10px 10px;
+    font-size:28px;
+    width:100%;
+    height:100%;
+}
+h1{
+    font-weight:bold;
+    color:rgb(127, 136, 255);
+    background: linear-gradient(to right,aquamarine,azure);
+    margin-top: 0%;
+    text-shadow : 1px 3px 3px #0a32e6;
+}
+header{
+    width:100%;
+    height:25%;
+}
+.a{
+    float:left;
+    width:25%;
+    height:50%;
+}
+.b{
+    float:left;
+    width:50%;
+    height:50%;
+}
+footer{
+    clear:both;
+    width:100%;
+    height:25%;
+}
+
