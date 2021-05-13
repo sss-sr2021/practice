@@ -1,0 +1,159 @@
+@charset "utf-8";
+.font{font-family:"Meiryo";}
+header{
+    width:900px;
+    height:43px;
+    background-color:#4dc;
+    border-radius:15px;
+}
+h1{
+    text-align:center;
+}
+.pic{
+    width:380px;
+    height:300px;
+    background-color:rgb(219, 253, 226);
+    float:left;
+    border-radius:15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.prof{
+    width:520px;
+    height:300px;
+    background-color:rgb(255, 197, 214);
+    float:left;
+    border-radius:15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+li{
+    font-size:x-large;
+    font-weight:bold;
+}
+.place{
+    width:300px;
+    height:200px;
+    background-color:rgb(249, 207, 255);
+    clear:both;
+    float:left;
+    border-radius:15px;
+}
+.school{
+    width:300px;
+    height:200px;
+    background-color:rgb(199, 233, 255);
+    float:left;
+    border-radius:15px;
+    position: relative;
+}
+.hobby{
+    width:300px;
+    height:200px;
+    background-color:rgb(255, 245, 199);
+    float:left;
+    border-radius:15px;
+}
+.placebutton{
+    display       : inline-block;
+    border-radius : 25%;          /* 角丸       */
+    font-size     : 17pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 30px 30px;   /* 余白       */
+    background    : rgba(139, 193, 255, 0.4);     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    position: absolute;
+    top: 61.5%;
+    left: 10%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    width: 100px;
+    text-align: center;
+  }
+  .placebutton:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+  }
+.button{
+    display       : inline-block;
+    border-radius : 25%;          /* 角丸       */
+    font-size     : 17pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 30px 30px;   /* 余白       */
+    background    : rgba(255, 111, 183, 0.4);     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    width: 100px;
+    text-align: center;
+  }
+  .button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+  }
+  .hobbybutton{
+    display       : inline-block;
+    border-radius : 25%;          /* 角丸       */
+    font-size     : 17pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 30px 30px;   /* 余白       */
+    background    : rgba(139, 255, 193, 0.4);     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    position: absolute;
+    top: 61.5%;
+    left: 49.5%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    width: 100px;
+    text-align: center;
+  }
+  .hobbybutton:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+  }
+  .kasumi{
+    clear:both;
+    float:left;
+  }
+  .retrun{
+    width:300px;
+    height:200px;
+    clear:both;
+    float:left;
+  }
+  .retrunbutton{
+    display       : inline-block;
+    border-radius : 25%;          /* 角丸       */
+    font-size     : 17pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 30px 30px;   /* 余白       */
+    background    : rgba(93, 144, 255, 0.4);     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  }
+  .retrunbutton:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+  }
