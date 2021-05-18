@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>カウントアップ</title>
+  <script src="/jquery-3.6.0.js"></script>
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <h1>カウントアップ</h1>
+  <div class="panel">
+   <p class="lamp">1</p>
+   <p class="lamp">2</p>
+   <p class="lamp">3</p>
+   <p class="lamp">4</p>
+   <p class="lamp">5</p>
+   <p class="lamp">6</p>
+   <p class="lamp">7</p>
+   <p class="lamp">8</p>
+   <p class="lamp">9</p>
+  </div>
+</body>
+<style type="text/css">
+.panel {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.lamp {
+	width: 1em;
+	padding: 0.5em;
+	display: none;
+}
+.show {
+	display: block;
+	background-color: yellow;
+}
+</style>
+<script type="text/javascript">
+var index = 0;
+goCntUp();
+setInterval('goCntUp()',500);
+
+function goCntUp(){
+ /* ここにスクリプトを書きなさい */
+ jQuery('.lamp').removeClass('show');
+ jQuery('.lamp').eq(index).addClass('show');
+ index++;
+ var len = jQuery('.lamp').length;
+ if( index > len - 1 ){
+ 	index = 0;
+ }
+}
+</script>
+</html> 
+ 
+ 
