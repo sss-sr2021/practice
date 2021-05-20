@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Neext Step</title>
+        <script src="/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <div class="question">
+            問題１
+           <a href="javascript:return false;" class="btn next">次へ</a> 
+        </div>
+        <div class="question">
+            問題２
+           <a href="javascript:return false;" class="btn next">次へ</a> 
+        </div>
+        <div class="question">
+            問題３
+           <a href="javascript:return false;" class="btn next">次へ</a> 
+        </div>
+        <div class="question">
+            ありがとうございました。
+        </div>
+    </body>
+    <style type="text/css">
+.question {
+    display: none;
+}
+.question:first-of-type {
+    display: block;
+}
+    </style>
+    <script type="text/javascript">
+$('.next').on('click',function(){
+    q = $(this).parent('div.question');
+    next = q.next();
+    q.hide();
+    if(next){
+        next.show();
+    }
+    return false;
+});
+    </script>
+</html>
